@@ -1,0 +1,21 @@
+{
+  "name": "data-simulation-project-playwright",
+  "version": "1.0.0",
+  "description": "FlinkPay Data Simulation framework - Playwright + JavaScript port of the Selenium/TestNG DataSimulationProject",
+  "scripts": {
+    "test": "playwright test",
+    "test:swift": "playwright test tests/simulateSwiftTxnsAndVerify_Inbound.spec.js",
+    "test:json": "playwright test tests/simulateJsonTxnsAndVerify_AllTxns.spec.js",
+    "test:transfer": "playwright test tests/transferAmountToOtherBankAndVerify.spec.js",
+    "test:headed": "playwright test --headed",
+    "report": "node scripts/open-latest-report.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "mysql2": "^3.11.0",
+    "ssh2": "^1.16.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+test-results/
+Execution_Reports/
+Downloads/
+playwright-report/
+Swift_Simuation_Files/20*/
+Json_Simualtion_Files/Json_txns_*.txt
